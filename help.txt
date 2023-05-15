@@ -1,0 +1,19 @@
+Bootstrap-> npm install bootstrap
+@fontawesome-> npm i @fortawesome/fontawesome-free
+
+connect fontawesome cdn link to html page
+-----------------------------------------
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+import link
+===========
+import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
+import { BrowserRouter } from 'react-router-dom'
+
+Axios->npm i axios
+React-Router-Dom->npm i react-router-dom
+
+Components-> Navbar
+contact-list,view-contact,edit-contact,add-contact
+Service->ContactService
