@@ -10,10 +10,14 @@ const App = () => {
   return (
     <React.Fragment>
       <Navbar/>
+     
       <Routes>
-        <Route path={'/'} element={<Navigate to={'/contact/list'}/>}/>
+        <Route path='*' element={<Navigate to='/' />} />
+        <Route path='/login' element={<AddContact />} />
+        {/* <Route path={'/'} element={<Navigate to={'/contact/list'}/>}/> */}
         <Route path={'/contacts/list'} element={<ContactList/>}/>
-        <Route path={'/contacts/add'} element={<AddContact/>}/>
+        <Route path="/contacts/add" element={<AddContact/>} />
+        {/* <Route path={'/contacts/add'} element={<AddContact/>}/> */}
         <Route path={'/contacts/view/:contactId'} element={<ViewContact/>}/>
         <Route path={'/contacts/edit/:contactId'} element={<EditContact/>}/>
       </Routes>
